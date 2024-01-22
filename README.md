@@ -1,6 +1,6 @@
-#Trabajo 01 Maquetado en Html, Css
+# Trabajo 01 Maquetado en Html, Css
 
-#Objetivo
+## Objetivo
 Implementar conocimientos de Html, CSS
 Se debe desarrollar un sitio web que represente tu CURRICULUM VITAE
 
@@ -30,4 +30,7 @@ Utilice el código hexadecimal para colores específicos
 Cree una variable CSS personalizada
 Modifique tamaño de imágenes
 
-#Resultado
+## Resultado
+Link: https://guzhdz.github.io/
+
+![image](https://github.com/guzhdz/guzhdz.github.io/assets/89165084/1ba1a73f-c23b-4db5-af8a-7a087a052fa7)

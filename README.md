@@ -3,7 +3,9 @@ This repository is my resume´s hosting, here is all the neccesary documents to 
 personal, academic, work experience and skills info.
 
 Link: https://guzhdz.github.io/
+
 Link project: https://github.com/guzhdz/curriculum-project
+
 Photo:
 
 ![image](https://github.com/guzhdz/guzhdz.github.io/assets/89165084/fb478459-d069-4fc5-8885-064d65dbc0f8)

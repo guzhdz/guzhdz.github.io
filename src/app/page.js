@@ -1,95 +1,107 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client'
+//React/Next imports
+import { useState } from "react";
+
+//Chakra imports
+import {
+  Flex,
+  Text,
+  Button,
+  Heading,
+  Highlight,
+  Box,
+  Group,
+  Image,
+  Link
+} from "@chakra-ui/react"
+
+//Component imports
+import Header from "./components/header/Header";
+import ParticlesBackground from "./components/ParticlesBackground";
+import LoadingPage from "./components/LoadingPage";
+
+//Context imports
+import { useShared } from "./context/SharedContext";
+
+//Library imports
+import { FaDownload } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const {particlesInit, setParticlesInit} = useShared();
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+  return (
+    <Flex w="100%" minH="100%" h="100vh" direction="column" overflowY="hidden">
+      <ParticlesBackground
+        init={particlesInit}
+        setInit={setParticlesInit} />
+
+      {!particlesInit && <LoadingPage />}
+
+      {particlesInit && <>
+        <Header />
+
+        <Flex
+          w="100%"
+          align="center"
+          height="100vh"
+          px={{ base: "50px", xl: "120px" }}>
+          <Flex width={{ base: "100%", md: "50%" }} direction="column"
+            height={{ base: "400px", lg: "600px" }}
+            justify="center"
+            data-state="open"
+            _open={{
+              animation: "slide-in 1.1s ease-in-out"
+            }}>
+            <Box>
+              <Heading
+                size={{ base: "3xl", md: "5xl" }}
+                mb={2}
+                fontWeight="bold">
+                I'm Gustavo Hernández Cano
+              </Heading>
+              <Text fontSize={{ base: "lg", md: "xl" }} mb={10}>
+                <Highlight
+                  query="Software Developer Junior"
+                  styles={{ px: "0.5", bg: "teal.subtle", color: "teal.fg" }}
+                  width="auto">
+                  Software Developer Junior, enthusiastic about web development and
+                  passionate about learning new technologies.
+                </Highlight>
+              </Text>
+
+              <Group gap={4}>
+                <Link href="/Resume.pdf" target="_blank">
+                  <Button colorPalette="teal" size="md">
+                    <FaDownload /> Resume
+                  </Button>
+                </Link>
+
+                <Link href="https://www.linkedin.com/in/guzhdz" target="_blank">
+                  <Button colorPalette="teal" size="md" variant="outline">
+                    <FaLinkedin /> Linkedin
+                  </Button>
+                </Link>
+              </Group>
+            </Box>
+          </Flex>
+
+          <Flex
+            width="50%"
+            justify="flex-end"
+            hideBelow="md"
+            data-state="open"
+            _open={{
+              animation: "slide-in 1.1s ease-in-out"
+            }}>
             <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+              src="/main-image.png"
+              alt="Gustavo Hernández Cano"
+              height={{ base: "400px", lg: "600px" }} />
+          </Flex>
+        </Flex>
+      </>}
+
+    </Flex>
   );
 }

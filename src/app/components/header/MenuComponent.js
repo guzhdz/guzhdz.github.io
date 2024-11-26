@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/menu"
 
 //Library imports
+import { FaHome } from "react-icons/fa";
 import { BiMessageDetail } from "react-icons/bi";
 import { MdComputer } from "react-icons/md";
 import { FaCode } from "react-icons/fa6";
@@ -35,13 +36,16 @@ export default function MenuComponent() {
                     </IconButton>
                 </MenuTrigger>
                 <MenuContent>
+                <MenuItem value="about" onClick={() => goTo("/")}>
+                        <FaHome /> Home
+                    </MenuItem>
                     <MenuItem value="about" onClick={() => goTo("/about")}>
                         <BiMessageDetail /> About
                     </MenuItem>
                     <MenuItem value="skills">
                         <MdComputer /> Skills
                     </MenuItem>
-                    <MenuItem value="projects">
+                    <MenuItem value="projects" onClick={() => goTo("/projects")}>
                         <FaCode /> Projects
                     </MenuItem>
                     <MenuItem value="contact">

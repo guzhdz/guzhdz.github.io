@@ -4,7 +4,6 @@ import {
     Flex,
     Text,
     Tabs,
-    defineStyle,
     Group,
     IconButton,
     Card,
@@ -12,7 +11,6 @@ import {
     Image,
     Box
 } from "@chakra-ui/react"
-import { Avatar } from "@/components/ui/avatar"
 
 //Component imports
 import Header from "../components/header/Header";
@@ -54,7 +52,7 @@ export default function About() {
                     align="center"
                     justify="center"
                     direction={{ base: "column", lg: "row" }}
-                    py={4}
+                    py={10}
                     gap={6}
                     overflowX="hidden"
                     px={{ base: "20px", md: "50px", xl: "120px" }}>

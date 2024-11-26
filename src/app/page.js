@@ -1,7 +1,4 @@
 'use client'
-//React/Next imports
-import { useState } from "react";
-
 //Chakra imports
 import {
   Flex,
@@ -44,8 +41,9 @@ export default function Home() {
         <Flex
           w="100%"
           align="center"
-          height="100vh"
-          px={{ base: "50px", xl: "120px" }}>
+          minH="90vh"
+          px={{ base: "50px", xl: "120px" }}
+          py={10}>
           <Flex width={{ base: "100%", md: "50%" }} direction="column"
             height={{ base: "400px", lg: "600px" }}
             justify="center"

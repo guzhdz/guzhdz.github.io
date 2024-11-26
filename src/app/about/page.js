@@ -36,7 +36,11 @@ export default function About() {
     const { particlesInit, setParticlesInit } = useShared();
 
     return (
-        <Flex w="100%" minH="100vh" direction="column">
+        <Flex
+            w="100%"
+            minH="100vh"
+            direction="column"
+            className="dark">
             <ParticlesBackground
                 init={particlesInit}
                 setInit={setParticlesInit} />

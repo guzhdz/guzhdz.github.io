@@ -36,7 +36,7 @@ export default function MenuComponent() {
                     </IconButton>
                 </MenuTrigger>
                 <MenuContent>
-                <MenuItem value="about" onClick={() => goTo("/")}>
+                    <MenuItem value="home" onClick={() => goTo("/")}>
                         <FaHome /> Home
                     </MenuItem>
                     <MenuItem value="about" onClick={() => goTo("/about")}>

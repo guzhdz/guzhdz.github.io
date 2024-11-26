@@ -25,10 +25,15 @@ import { FaDownload } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
-  const {particlesInit, setParticlesInit} = useShared();
+  const { particlesInit, setParticlesInit } = useShared();
 
   return (
-    <Flex w="100%" minH="100%" h="100vh" direction="column" overflowY="hidden">
+    <Flex
+      w="100%"
+      minH="100vh"
+      direction="column"
+      overflowY="hidden"
+      className="dark">
       <ParticlesBackground
         init={particlesInit}
         setInit={setParticlesInit} />

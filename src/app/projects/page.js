@@ -97,7 +97,11 @@ export default function Projects() {
     }
 
     return (
-        <Flex w="100%" minH="100%" direction="column">
+        <Flex
+            w="100%"
+            minH="100vh"
+            direction="column"
+            className="dark">
             <ParticlesBackground
                 init={particlesInit}
                 setInit={setParticlesInit} />
@@ -124,7 +128,7 @@ export default function Projects() {
                     </Heading>
 
                     <Grid
-                        templateColumns={{base: "repeat(auto-fill, minmax(300px, 1fr))", md: "repeat(auto-fill, minmax(400px, 1fr))"}}
+                        templateColumns={{ base: "repeat(auto-fill, minmax(300px, 1fr))", md: "repeat(auto-fill, minmax(400px, 1fr))" }}
                         gap={6}
                         w="100%">
                         {projects.map((project, index) => (

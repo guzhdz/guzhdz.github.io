@@ -32,7 +32,7 @@ export default function Projects() {
             title: "ItranForms",
             description: "Web application that allows you to create, edit and manage your templates, as allow other users to answer the templates as forms. is similar to Google Forms.",
             techs: ["Next.js", "React.js (Javascript, CSS, HTML)", "GitHub", "Node.js", "PostgreSQL", "Prisma ORM", "Chakra UI"],
-            image: "/projects/itranforms.png",
+            image: "/projects/ItranForms.png",
             deploy: "https://itrasition-course-project.onrender.com",
             github: "https://github.com/guzhdz/Itrasition-Course-Project",
             status: "In progress"
@@ -69,7 +69,7 @@ export default function Projects() {
             description: "Web application that provides a tourist places search system, an artificial intelligence recommendation system, and a trip planner.",
             techs: ["Angular (Typescript, Javascript, CSS, HTML)", "Firebase", "Google Apis", "Google Cloud", "AWS (Lambda, Api Gateway)",
                 "Node.js", "GitHub", "Figma"],
-            image: "/projects/clevertrip.png",
+            image: "/projects/Clevertrip.png",
             deploy: "https://clevertrip-59cb1.web.app/",
             github: "https://github.com/guzhdz/CleverTrip",
             status: "Finished"

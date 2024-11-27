@@ -42,7 +42,7 @@ export default function MenuComponent() {
                     <MenuItem value="about" onClick={() => goTo("/about")}>
                         <BiMessageDetail /> About
                     </MenuItem>
-                    <MenuItem value="skills">
+                    <MenuItem value="skills" onClick={() => goTo("/skills")}>
                         <MdComputer /> Skills
                     </MenuItem>
                     <MenuItem value="projects" onClick={() => goTo("/projects")}>

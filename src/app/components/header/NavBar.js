@@ -33,9 +33,13 @@ export default function NavBar() {
                     </Button>
                 </NextLink>
             </Link>
-            <Button variant="ghost" size="lg">
-                <MdComputer /> Skills
-            </Button>
+            <Link asChild>
+                <NextLink href="/skills">
+                    <Button variant="ghost" size="lg">
+                        <MdComputer /> Skills
+                    </Button>
+                </NextLink>
+            </Link>
             <Link asChild>
                 <NextLink href="/projects">
                     <Button variant="ghost" size="lg">

@@ -23,7 +23,7 @@ export default function SkillCategory({ name, skills, last = false }) {
             </Heading>
             <Grid
                 templateColumns={{
-                    base: "repeat(auto-fill, minmax(150px, 1fr))",
+                    base: "repeat(auto-fill, minmax(100px, 1fr))",
                     md: "repeat(auto-fill, minmax(150px, 1fr))",
                 }}
                 gap={10}

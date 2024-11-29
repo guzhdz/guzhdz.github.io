@@ -110,7 +110,7 @@ export default function Contact() {
                                     opacity={0}
                                     data-state="open"
                                     _open={{
-                                        animation: "slide-in 1s ease-in-out",
+                                        animation: "slide-in .8s ease-in-out",
                                         animationDelay: `${index * 0.1}s`,
                                         animationFillMode: "forwards",
                                     }}>

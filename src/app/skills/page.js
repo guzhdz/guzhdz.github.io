@@ -20,10 +20,7 @@ import SkillCategory from "../components/skills/SkillCategory";
 //Context imports
 import { useShared } from "../context/SharedContext";
 
-//Library imports
-
-
-export default function Home() {
+export default function Skills() {
   const { particlesInit, setParticlesInit } = useShared();
   const skillsFrontend = [
     {

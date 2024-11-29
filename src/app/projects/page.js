@@ -45,7 +45,7 @@ export default function Projects() {
             image: "/projects/Portfolio.png",
             deploy: "https://guzhdz.github.io/",
             github: "https://github.com/guzhdz/guzhdz.github.io",
-            status: "In progress",
+            status: "Finished",
         },
         {
             title: "Data Faker",

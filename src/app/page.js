@@ -100,7 +100,7 @@ export default function Home() {
             <Image
               src="/main-image.png"
               alt="Gustavo Hernández Cano"
-              height={{ base: "400px", lg: "600px" }} />
+              height={{ base: "400px", xl: "500px", "2xl": "600px" }} />
           </Flex>
         </Flex>
       </>}

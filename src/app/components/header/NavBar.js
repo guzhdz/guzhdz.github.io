@@ -47,9 +47,13 @@ export default function NavBar() {
                     </Button>
                 </NextLink>
             </Link>
-            <Button variant="ghost" size="lg">
-                <LuContact2 /> Contact
-            </Button>
+            <Link asChild>
+                <NextLink href="/contact">
+                    <Button variant="ghost" size="lg">
+                        <LuContact2 /> Contact
+                    </Button>
+                </NextLink>
+            </Link>
         </Group>
     );
 }

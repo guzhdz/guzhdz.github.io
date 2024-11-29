@@ -48,7 +48,7 @@ export default function MenuComponent() {
                     <MenuItem value="projects" onClick={() => goTo("/projects")}>
                         <FaCode /> Projects
                     </MenuItem>
-                    <MenuItem value="contact">
+                    <MenuItem value="contact" onClick={() => goTo("/contact")}>
                         <LuContact2 /> Contact
                     </MenuItem>
                 </MenuContent>

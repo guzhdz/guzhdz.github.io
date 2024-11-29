@@ -154,7 +154,7 @@ export default function Projects() {
                                     data-state="open"
                                     opacity={0}
                                     _open={{
-                                        animation: "slide-in .8s ease-in-out",
+                                        animation: "slide-in 1s ease-in-out",
                                         animationDelay: `${index * 0.1}s`,
                                         animationFillMode: "forwards",
                                     }}

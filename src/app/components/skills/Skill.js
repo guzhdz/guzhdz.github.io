@@ -15,7 +15,7 @@ export default function Skill({ skill, index }) {
             data-state="open"
             opacity={0}
             _open={{
-                animation: "slide-in .6s ease-in-out",
+                animation: "slide-in .8s ease-in-out",
                 animationDelay: `${index * 0.1}s`,
                 animationFillMode: "forwards",
             }}

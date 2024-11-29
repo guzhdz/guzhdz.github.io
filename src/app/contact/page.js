@@ -32,7 +32,7 @@ export default function Contact() {
         },
         {
             name: "Linkedin",
-            link: "www.linkedin.com/in/guzhdz",
+            link: "https://www.linkedin.com/in/guzhdz",
             icon: <FaLinkedin />,
             title: "Connect with me on Linkedin"
         },
@@ -94,7 +94,11 @@ export default function Contact() {
                             src="/contact-image.png"
                             alt="Contact image"
                             height="300px"
-                            mb={4}/>
+                            mb={4}
+                            data-state="open"
+                            _open={{
+                                animation: "appear 1.1s ease-in-out",
+                            }}/>
 
                         <Stack gap={8}>
                             {contacts.map((contact, index) => (
@@ -102,7 +106,14 @@ export default function Contact() {
                                     key={index}
                                     href={contact.link}
                                     target="_blank"
-                                    title={contact.title}>
+                                    title={contact.title}
+                                    opacity={0}
+                                    data-state="open"
+                                    _open={{
+                                        animation: "slide-in 1.1s ease-in-out",
+                                        animationDelay: `${index * 0.1}s`,
+                                        animationFillMode: "forwards",
+                                    }}>
                                     <Button size="xl" borderRadius="full" colorPalette="teal" variant="surface" w={"300px"}>
                                         {contact.icon}
                                         {contact.name}

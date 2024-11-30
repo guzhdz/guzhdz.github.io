@@ -143,7 +143,7 @@ export default function About() {
                                     </Tabs.Trigger>
                                     <Tabs.Trigger value="education" minW="150px">
                                         <IoSchool />
-                                        Eduacation
+                                        Education
                                     </Tabs.Trigger>
                                     <Tabs.Indicator rounded="l2" />
                                 </Tabs.List>

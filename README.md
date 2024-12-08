@@ -1,3 +1,16 @@
+# My website
+A comprehensive portfolio showing my skills, personal projects, educational background, and contact information. Created to showcase my potential and connect with future opportunities.
+
+Technologies: Next.js, React.js (Javascript, CSS, HTML), GitHub, Chakra UI
+
+# Results
+Deployed link: https://guzhdz.github.io/
+
+Images:
+
+![image](https://github.com/user-attachments/assets/1b96a277-3fee-4beb-b358-9f35969a84a1)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

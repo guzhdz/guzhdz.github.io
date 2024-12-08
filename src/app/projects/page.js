@@ -66,7 +66,7 @@ export default function Projects() {
         {
             title: "Login Page and User Manager",
             description:
-                "Web application that allows you to create, edit and manage your templates, as allow other users to answer the templates as forms. is similar to Google Forms.",
+                "Web application that allows to register and authenticate as a user, also it allows the users manage of the app.",
             techs: [
                 "Next.js",
                 "React.js (Javascript, CSS, HTML)",

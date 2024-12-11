@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
     }
 
     return (
-        <Card.Root>
+        <Card.Root h={"100%"}>
             <Image
                 src={project.image}
                 alt="Project image"

@@ -110,6 +110,26 @@ export default function Projects() {
             github: "https://github.com/guzhdz/minicompilador",
             status: "Finished",
         },
+        {
+            title: "Heroes OW FastApi",
+            description:
+                "Web application created with FastApi, this website shows the heroes of the videogame named Overwatch2 as well as some filters by role of the hores on the game.",
+            techs: ["Angular (Typescript, Javascript, SCSS, HTML)", "GitHub", "Python", "FastApi"],
+            image: "/projects/OverwatchHeroes.png",
+            deploy: "https://fastapi-deploy-uonp.onrender.com/heroes",
+            github: "https://github.com/guzhdz/Heroes-OW-FastApi",
+            status: "Finished",
+        },
+        {
+            title: "Factura.com Frontend Challenge",
+            description:
+                "Its a challange from a company named factura.com, its jus a littele project where it can create and watch all the CFDI.",
+            techs: ["Vue.js (Javascript, CSS, HTML)", "GitHub", "Node.js", "Vuetify"],
+            image: "/projects/Factura.png",
+            deploy: "https://reto-factura-com-1.onrender.com/",
+            github: "https://github.com/guzhdz/Reto-Factura.com",
+            status: "Finished",
+        },
     ];
 
     return (
@@ -145,6 +165,7 @@ export default function Projects() {
                                 base: "repeat(auto-fill, minmax(300px, 1fr))",
                                 md: "repeat(auto-fill, minmax(400px, 1fr))",
                             }}
+                            autoRows={"1fr"}
                             gap={6}
                             w="100%"
                         >

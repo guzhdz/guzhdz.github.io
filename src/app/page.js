@@ -68,7 +68,7 @@ export default function Home() {
                   query="Software Developer Junior"
                   styles={{ px: "0.5", bg: "teal.subtle", color: "teal.fg" }}
                   width="auto">
-                  Software Developer Junior, enthusiastic about web development and
+                  Software Developer 1 at Oracle, web development enthusiastic and
                   passionate about learning new technologies.
                 </Highlight>
               </Text>

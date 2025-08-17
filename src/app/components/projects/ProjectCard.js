@@ -30,6 +30,7 @@ export default function ProjectCard({ project }) {
                 src={project.image}
                 alt="Project image"
                 h="250px"
+                borderTopRadius="md"
             />
             <Card.Body>
                 <Card.Title color="teal.500" mb={4}>{project.title}</Card.Title>

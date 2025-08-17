@@ -16,7 +16,7 @@ import {
 import Header from "../components/header/Header";
 import LoadingPage from "../components/LoadingPage";
 import AboutMe from "../components/about/AboutMe";
-import Hobbies from "../components/about/Hobbies";
+import WorkExperience from "../components/about/WorkExperience";
 import Goals from "../components/about/Goals";
 import Education from "../components/about/Education";
 import ParticlesBackground from "../components/ParticlesBackground";
@@ -26,7 +26,8 @@ import { useShared } from "../context/SharedContext";
 
 //Library imports
 import { BsPersonSquare } from "react-icons/bs";
-import { IoGameController, IoSchool } from "react-icons/io5";
+import { IoSchool } from "react-icons/io5";
+import { MdWork } from "react-icons/md";
 import { GoGoal } from "react-icons/go";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -133,9 +134,9 @@ export default function About() {
                                         <BsPersonSquare />
                                         About me
                                     </Tabs.Trigger>
-                                    <Tabs.Trigger value="hobbies" minW="150px">
-                                        <IoGameController />
-                                        Hobbies
+                                    <Tabs.Trigger value="work" minW="150px">
+                                        <MdWork />
+                                        Work Experience
                                     </Tabs.Trigger>
                                     <Tabs.Trigger value="goals" minW="150px">
                                         <GoGoal />
@@ -151,8 +152,8 @@ export default function About() {
                                 <Tabs.Content value="about">
                                     <AboutMe />
                                 </Tabs.Content>
-                                <Tabs.Content value="hobbies">
-                                    <Hobbies />
+                                <Tabs.Content value="work">
+                                    <WorkExperience />
                                 </Tabs.Content>
                                 <Tabs.Content value="goals">
                                     <Goals />

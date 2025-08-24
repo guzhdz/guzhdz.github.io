@@ -16,7 +16,7 @@ export default function WorkExperience() {
                 Member of Technical Staff (Software Developer 1)
             </Text>
             <Text textAlign="justify" fontSize="lg">
-                January 2025 - Currently working
+                January 2025 - August 2025
             </Text>
 
             <Text textAlign="justify" fontSize="lg">

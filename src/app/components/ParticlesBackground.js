@@ -17,9 +17,7 @@ export default function ParticlesBackground({ init, setInit }) {
     useEffect(() => {
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
-        }).then(() => {
-            setInit(true);
-        });
+        }).then(() => setInit(true));
     }, []);
 
     const options = useMemo(
@@ -94,7 +92,7 @@ export default function ParticlesBackground({ init, setInit }) {
             },
             detectRetina: true,
         }),
-        [],
+        []
     );
 
     if (init) {

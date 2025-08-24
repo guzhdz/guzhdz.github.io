@@ -13,7 +13,7 @@ import Skill from "./Skill";
 export default function SkillCategory({ name, skills, last = false }) {
     return (
 
-        <Stack mb={ last ? 0: 20}>
+        <Stack mb={ last ? 0 : 20}>
             <Heading size="xl" mb={4} color="teal.500"
                 data-state="open"
                 _open={{

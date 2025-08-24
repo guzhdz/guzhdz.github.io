@@ -17,7 +17,7 @@ export default function AboutMe() {
                     query={["Computer Engineering", "Software Development Technologist", "Software Developer 1", "Oracle"]}
                     styles={{ px: "0.5", bg: "teal.subtle", color: "teal.fg" }}
                     width="auto">
-                    I am a Software Developer 1 at Oracle, Computer Engineering graduate and Software Development Technologist, aspiring to 
+                    I am an ex - Software Developer 1 at Oracle, Computer Engineering graduate and Software Development Technologist, aspiring to 
                     Web FullStack Developer.  With knowledge in technologies like JavaScript, HTML, CSS, Node.js, React, Vue and Angular. 
                     I  am passionate about learning new technological tools and applying them to create functional, high-quality and amazing applications.
                     I am committed to efficient solutions, continuous learning, and team collaboration to bring real value to projects.

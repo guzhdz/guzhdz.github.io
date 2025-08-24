@@ -70,6 +70,10 @@ export default function Skills() {
     {
       name: "Ionic",
       img: "/skills/ionic.png",
+    },
+    {
+      name: "Oracle JET",
+      img: "/skills/jet.png",
     }
   ];
   const skillsBackend = [
@@ -98,6 +102,28 @@ export default function Skills() {
       img: "/skills/python.png",
     }
   ];
+  const skillsVersionAndProject = [
+    {
+      name: "GitHub",
+      img: "/skills/github.png",
+    },
+    {
+      name: "Git",
+      img: "/skills/git.png",
+    },
+    {
+      name: "Jira",
+      img: "/skills/jira.svg",
+    },
+    {
+      name: "Bitbucket",
+      img: "/skills/bitbucket.png",
+    },
+    {
+      name: "Confluence",
+      img: "/skills/confluence.svg",
+    }
+  ];
   const otherSkills = [
     {
       name: "Python",
@@ -110,10 +136,6 @@ export default function Skills() {
     {
       name: "VSCode",
       img: "/skills/vscode.png",
-    },
-    {
-      name: "GitHub",
-      img: "/skills/github.png",
     },
     {
       name: "AWS",
@@ -138,6 +160,22 @@ export default function Skills() {
     {
       name: "AI Bases",
       img: "/skills/ai.png",
+    },
+    {
+      name: "Windows",
+      img: "/skills/windows.png",
+    },
+    {
+      name: "MacOS",
+      img: "/skills/macos.png",
+    },
+    {
+      name: "Linux terminal",
+      img: "/skills/linux.png",
+    },
+    {
+      name: "UI tests",
+      img: "/skills/uitests.png",
     }
   ];
 
@@ -178,7 +216,10 @@ export default function Skills() {
 
             <SkillCategory name="Backend & Database" skills={skillsBackend} />
 
+            <SkillCategory name="Version Control & Project Management" skills={skillsVersionAndProject} />
+
             <SkillCategory name="Other Skills" skills={otherSkills} last={true} />
+
           </Flex>
         </>
       )}
